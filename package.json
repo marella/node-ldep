@@ -1,0 +1,36 @@
+{
+  "name": "ldep",
+  "version": "0.1.0",
+  "description": "List and load dependencies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "dependencies",
+    "load",
+    "plugins",
+    "gulp",
+    "grunt"
+  ],
+  "author": "Ravindra Marella <mv.ravindra@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "findup-sync": "^0.3.0",
+    "multimatch": "^2.1.0"
+  },
+  "devDependencies": {
+    "lodash": "^3.10.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marella/node-ldep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marella/node-ldep/issues"
+  },
+  "homepage": "https://github.com/marella/node-ldep#readme"
+}
