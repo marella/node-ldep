@@ -6,7 +6,7 @@ Based on https://github.com/jackfranklin/gulp-load-plugins.
 Returns an array of dependency names.
 
 argument|type|default|description
----:|---
+---|---|---|---
 scope|array|['dependencies', 'devDependencies', 'peerDependencies']|list of dependency types
 config|string or object|'package.json'|path to package.json file or custom config object
 
@@ -19,7 +19,7 @@ var deps = ldep.list(['devDependencies'], './package.json');
 Attaches dependency names to a single variable. Dependencies are lazy loaded only when the dependency name is accessed.
 
 argument|type|description
----:|---
+---|---|---
 deps|array|list of dependency names
 rename|function|function to customize name of each dependency. Takes 2 arguments - name of dependency and `camelize` function (which converts `gulp-plugin` to `gulpPlugin`) - and returns the modified name
 
@@ -45,7 +45,7 @@ var $ = ldep.load(ldep.list(['devDependencies'])), function(name, camelize) {
 This is a wrapper for [multimatch](https://www.npmjs.com/package/multimatch) implemented as `multimatch(deps, match)`.
 
 argument|type
----:|---
+---|---
 match|string or array
 deps|array
 
